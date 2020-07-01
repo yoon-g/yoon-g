@@ -1,0 +1,225 @@
+@charset "utf-8";
+@media screen and (min-width:1024px){
+/*===============데스크탑=============*/
+
+	.but {display:none}
+	.header_nav2  {display:none}
+	#content .cont4 .mob_list {display:none}
+	
+	
+}
+@media screen and (min-width:641px) and (max-width:1024px) {
+/*==============테블릿================*/
+	
+	.but {display:none}
+	.header_nav2  {display:none}
+
+	header{width:100%;margin:0 auto}
+	#visual    {width:100%;height:400px;}
+	#content  {width:100%;margin:0 auto}
+	#content :after {content:' ';display:block;clear:both;}
+	footer .finner {width:100%;}
+	
+	/*header*/
+		header .snsbox  img {width:28px;height:26px}
+		header .header_nav {width:100%}
+		header .header_nav .gnb > li {width:16.66666%}
+		header .header_nav .gnb li .main {width:100%;font-size:17px}
+		header .header_nav .gnb li .sub {width:16.66666%} 
+		header .header_nav .gnb li .sub  li {width:100%}
+
+	/*content*/
+
+	/*cont1*/
+		#content .cont1 {width:100%;height:600px}
+		#content .cont1 .box1, #content .cont1 .box2,#content .cont1 .box3,#content .cont1 .box4
+		{width:49%;height:300px;}
+		
+		#content .cont1 .box1 .box1bg  li {width:100%;}
+		#content .cont1 .box2 .box2bg  li {width:100%;}
+		#content .cont1 .box3 .box3bg  li {width:100%;}
+		#content .cont1 .box4 .box4bg  li {width:100%;}
+
+	/*cont2*/
+		#content .cont2 {width:100%;height:420px}
+		 #content .cont2 .icon_box  {width:100%;height:420px}
+		 #content .cont2 .icon_box li  {width:32.5%;height:200px;margin:5px 0}
+
+		 #content .cont2 .icon_box li:nth-child(3) {border-radius:0 30px 30px 0;}
+		  #content .cont2 .icon_box li:nth-child(4) {border-left:1px solid #505050;
+		  border-radius:30px 0 0 30px;}
+
+	/*cont3*/
+		#content .cont3 {width:100%}
+		#content .cont3 .listbox .tabs li {font-size:17px}
+		 .tab-content ul li {font-size:13px}
+		
+		#content .cont3 {position:relative}
+		#content .cont3 .adv {position:absolute;top:0;right:10px;}
+		#content .cont3 .listbox,#content .cont3 .adv {width:48%;margin:5px 0;height:300px}
+		#content .cont3 .icon_list {width:99%;}
+
+		/*
+		#content .cont3 .icon_list li {width:400px;height:100px}
+		#content .cont3 .icon_list li > a {width:100%;height:100%;text-align:center}
+		/*가운데 정렬이 안된다.*/
+		
+
+	#content .cont3 .icon_list li:nth-child(1)  p {position:absolute;left:50%;top:30px}
+	#content .cont3 .icon_list li:nth-child(2)  p {position:absolute;left:50%;top:30px}
+	#content .cont3 .icon_list li:nth-child(3)  p {position:absolute;left:50%;top:30px}
+	#content .cont3 .icon_list li:nth-child(4)  p {position:absolute;left:50%;top:30px}
+	#content .cont3 .icon_list li:nth-child(5)  p {position:absolute;left:50%;top:30px}
+	#content .cont3 .icon_list li:nth-child(6)  p {position:absolute;left:50%;top:30px}
+
+	#content .cont3 .icon_list li a img {width:55px;height:60px;float:left;}
+	#content .cont3 .icon_list li:nth-child(1)  img {position:absolute;left:30%;top:10px}
+	#content .cont3 .icon_list li:nth-child(2)  img {position:absolute;left:30%;top:10px}
+	#content .cont3 .icon_list li:nth-child(3)  img {position:absolute;left:30%;top:10px}
+	#content .cont3 .icon_list li:nth-child(4)  img {position:absolute;left:30%;top:10px}
+	#content .cont3 .icon_list li:nth-child(5)  img {position:absolute;left:30%;top:10px}
+	#content .cont3 .icon_list li:nth-child(6)  img {position:absolute;left:30%;top:10px}
+
+
+	/*cont4*/
+	#content .cont4 {display:none}
+	#content .cont4 .mob_list {display:none}
+
+	/*footer*/
+	footer .finner {width:100%}
+	footer .finner  .fgnb ul {width:100%;text-align: center;height:60px}
+	footer .finner  .fgnb  li {width:14%;}
+	footer .finner  .fgnb  li a {font-size:0.7em;text-align: center;display:block;line-height:60px}
+	
+	footer .finner .infor {width:60%}
+	footer .finner .infor .ad {width:100%}
+	footer .finner .infor .adt li  {font-size:0.5em;padding:5px 1px}
+	footer .finner .infor p  {clear:both;display:block;font-size:0.5em}
+
+	footer .finner .sites  {width:35%}
+	footer .finner .fimg img {position:absolute;right:0;width:40px;height:30px}
+
+
+}
+@media screen and (max-width:640px){
+/*==============모바일==============*/
+	/*reyout*/
+		header {width:100%;position:relative}
+		#visual   {display:none}
+		#content  {width:100%;}
+		footer {width:100%;margin-top:3%;position:relative}
+		footer .finner  {width:100%;}
+
+	/*nav2*/
+	.header_nav2 {display:none}
+	.header_nav2  {width:100%;background-color: #fff;z-index:100;position:absolute;margin-top:40px}
+	.header_nav2 .gnb {width:100%;}
+	.header_nav2 .gnb li a {display:block;font-size:18px}
+	.header_nav2 .gnb li .main {width:100%;height:30px;background-color: #ffcc66;padding:10px;
+	;font-weight:bold;text-align:center;line-height:30px;border-bottom:1px solid #eee}
+	.header_nav2 .gnb .sub {background-color: #eee;}
+	.header_nav2 .gnb .sub li {padding:8px 0}
+
+		
+
+	/*header*/
+	.snsbox {display:none}
+	.header_nav {display:none}
+
+
+	header .logo {position:absolute;left:50%;top:50%;margin-left:-95px;
+	margin-top:-20px;}
+	header  .but {position:absolute;right:0;top:0;}
+	header  .but img {width:50px;height:50px}
+
+
+	/*content*/
+	#content .cont1 {width:100%;height:1200px;margin:0 auto}
+	#content .cont1 .box1, #content .cont1 .box2,#content .cont1 .box3,#content .cont1 .box4
+	{width:100%;height:300px;}
+
+	#content .cont1 .box1 .box1bg h2 {text-align:center;font-size:2em; }
+	#content .cont1 .box1 .box1bg  a {display:inline-block;color:#fff;}
+	#content .cont1 .box1 .box1bg span {color:#fff;float:right;font-weight: bold;font-size:18px}
+	#content .cont1 .box1 .box1bg  li {margin-left:2%;width:100%;height:31px;border-top:1px solid #fff}
+	#content .cont1 .box1 .box1bg  li > a {float:left;font-size:18px;width:80%;}
+
+	#content .cont1 .box2 .box2bg h2 {text-align:center;font-size:2em; }
+	#content .cont1 .box2 .box2bg  a {display:inline-block;color:#fff;}
+	#content .cont1 .box2 .box2bg span {color:#fff;float:right;font-weight: bold;font-size:18px}
+	#content .cont1 .box2 .box2bg  li {margin-left:2%;width:100%;height:31px;border-top:1px solid #fff}
+	#content .cont1 .box2 .box2bg  li > a {float:left;font-size:18px;width:80%;}
+
+	#content .cont1 .box3 .box3bg h2 {text-align:center;font-size:2em; }
+	#content .cont1 .box3 .box3bg  a {display:inline-block;color:#fff;}
+	#content .cont1 .box3 .box3bg span {color:#fff;float:right;font-weight: bold;font-size:18px}
+	#content .cont1 .box3 .box3bg  li {margin-left:2%;width:100%;height:31px;border-top:1px solid #fff}
+	#content .cont1 .box3 .box3bg  li > a {float:left;font-size:18px;width:80%;}
+
+	#content .cont1 .box4 .box4bg h2 {text-align:center;font-size:2em; }
+	#content .cont1 .box4 .box4bg  a {display:inline-block;color:#fff;}
+	#content .cont1 .box4 .box4bg span {color:#fff;float:right;font-weight: bold;font-size:18px}
+	#content .cont1 .box4 .box4bg  li {margin-left:2%;width:100%;height:31px;border-top:1px solid #fff}
+	#content .cont1 .box4 .box4bg  li > a {float:left;font-size:18px;width:80%;}
+
+	#content .cont2 {width:100%;margin-top:10px;margin:0 auto;height:630px}
+	#content .cont2 .icon_box {width:100%;}
+
+	#content .cont2 .icon_box li  {width:49.5%;height:200px;margin-top:3px} 
+	#content .cont2 .icon_box li:nth-child(2) { border-radius:0 30px 30px 0;}
+	#content .cont2 .icon_box li:nth-child(3) {border-left:1px solid #000;border-radius:30px 0 0 30px}
+	#content .cont2 .icon_box li:nth-child(4) { border-radius:0 30px 30px 0;}
+	#content .cont2 .icon_box li:nth-child(5)  {border-left:1px solid #000;border-radius:30px 0 0 30px}
+
+	#content .cont3 {width:99.5%;position:relative;}
+	#content .cont3 .icon_list {width:100%;margin-top:10px;position:relative;}
+	#content .cont3 .icon_list li p {font-size:13px}
+	#content .cont3 .icon_list li a img {width:40px;height:50px;float:left;}
+
+	#content .cont3 .icon_list li:nth-child(1)  p {position:absolute;left:40%;top:40%}
+	#content .cont3 .icon_list li:nth-child(2)  p {position:absolute;left:50%;top:45%}
+	#content .cont3 .icon_list li:nth-child(3)  p {position:absolute;left:40%;top:40%}
+	#content .cont3 .icon_list li:nth-child(4)  p {position:absolute;left:50%;top:45%}
+	#content .cont3 .icon_list li:nth-child(5)  p {position:absolute;left:40%;top:45%}
+	#content .cont3 .icon_list li:nth-child(6)  p {position:absolute;left:50%;top:45%}
+
+	#content .cont3 .icon_list li:nth-child(1)  img {position:absolute;left:20%;top:30%}
+	#content .cont3 .icon_list li:nth-child(2)  img {position:absolute;left:30%;top:30%}
+	#content .cont3 .icon_list li:nth-child(3)  img {position:absolute;left:20%;top:30%}
+	#content .cont3 .icon_list li:nth-child(4)  img {position:absolute;left:30%;top:30%}
+	#content .cont3 .icon_list li:nth-child(5)  img {position:absolute;left:20%;top:30%}
+	#content .cont3 .icon_list li:nth-child(6)  img {position:absolute;left:30%;top:30%}
+
+	#content .cont3 .adv {display:none}
+	#content .cont3 .listbox {display:none}
+	#content .cont4 .site, #content .cont4 .site_btn {display:none}
+	#content .cont4 .mob_list {display:block}
+		
+	#content .cont4 {width:100%;height:200px}
+	#content .cont4 .mob_list {width:99.7%;height:200px;border:1px solid #000;border-radius:20px}
+	#content .cont4 .mob_list ul {width:100%;height:95%}
+	#content .cont4 .mob_list h2 {text-align:center;font-size:1.3em}
+	#content .cont4 .mob_list ul li {width:100%;height:30px}
+	#content .cont4 .mob_list ul li a {float:left;width:65%;padding-left:5%}
+	#content .cont4 .mob_list ul li span {float:right:}
+
+
+	/*footer*/
+	footer .finner  .fgnb  {display:none}
+
+	footer .finner .infor .adt li  {font-size:0.5em;padding:5px 2px}
+	footer .finner .infor p  {font-size:0.5em}
+
+
+	footer .finner .sites {display:none}
+	
+	footer .finner .infor {width:95%}
+	footer .finner .infor .ad {width:100%}
+	footer .finner .infor .adt li  {font-size:0.5em;padding:5px 1px}
+	footer .finner .infor p  {clear:both;display:block;font-size:0.5em}
+
+	footer .finner .fimg {float:left;width:5%}
+
+
+	footer .finner .fimg  img {position:absolute;right:0;width:40px;height:30px}
+}
